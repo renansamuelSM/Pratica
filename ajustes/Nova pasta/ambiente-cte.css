@@ -1,0 +1,165 @@
+body{
+	font-family: 'Times New Roman', Times, serif;
+	background-image: url(../images/site-branco.png);
+	background-size: cover;
+	background-position: center center;
+	height: 80vh;
+	vertical-align: 15px;
+}
+button{
+	display: inline-block;
+}
+
+button{
+	padding: 6px 15px;
+	background: #363636;
+	color: #ffffff;
+	border: 1px  solid #000000;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 5px;
+}
+button:hover{
+	background: #ff6600;
+}
+form{
+	display: inline-block;
+    vertical-align: top;
+}
+
+/* ALTERAÇÕES TESTE */
+section{
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.modal{
+	position: fixed;
+	padding: 0;
+	left: 0;
+	top: 160px;
+	width: 100%;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	transform: scale(1.1);
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;	
+}
+.modal-content{
+	background-color: rgba(204, 202, 199, 0.562);
+	padding: 2px 10px;
+	width: 1000px;
+	height: 680px;
+	border-radius: 5px;
+	display: inline;
+	border-style: solid;
+}
+#linha1{
+	align-content: inline;
+}
+.modal-content button{
+	margin-left: 10px;
+}
+#ambiente-cte{
+	margin-left: 500px;
+}
+#novocte  input[type=text] {
+	display: inline;
+}
+
+.show-modal{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+}
+
+.frete{
+	align-items: inline;
+}
+
+.numero{
+	align-items: block;
+}
+
+form{
+	display: inline-block;
+	color: black;
+}
+
+
+
+
+form{
+	align-items: flex;
+	
+}
+button{
+	padding: 8px 15px;
+	background: #333333;
+	color: white;
+	border: 1px  solid #000000;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 5px;
+}
+button:hover{
+	background: #ff6600;
+}
+
+label {
+	vertical-align: 15px;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+input {
+	vertical-align: 15px;
+}
+
+
+nav li {
+	display: inline;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+p {
+	color: rgb(255, 255, 255);
+	padding: 3px 4px;
+	font-size: 20px;
+	background-color: #333333;
+	margin-right: 780px;
+	border-radius: 10px;
+}
+ .menu {
+	margin-top: 0px;
+}
+
+ #empresas button{
+	vertical-align: 15px;
+	padding: 4px 4px;
+}
+
+h2 {
+	color: #333333;
+	margin-left: 15px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 28px;
+}
+
+#responsavel {
+	display: inline;
+}
+
+input[type="radio"] {
+	margin-top: -1px;
+	vertical-align: middle;
+	margin: 5px 5px;
+}
+
+label[type="text"]{
+	margin-top: -1px;
+	vertical-align: middle;
+	margin-top: 5px 5px;
+}

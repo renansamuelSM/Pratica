@@ -1,0 +1,89 @@
+body{
+	font-family: 'Times New Roman', Times, serif;
+	background-image: url(../images/site-branco.png);
+	background-size: cover;
+	background-position: center center;
+	height: 80vh;
+}
+button{
+	display: inline-block;
+}
+button{
+	padding: 6px 15px;
+	background: #363636;
+	color: #ffffff;
+	border: 1px  solid #000000;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 5px;
+}
+button:hover{
+	background: #ff6600;
+}
+form{
+	display: inline-block;
+    vertical-align: top;
+}
+
+/* ALTERAÇÕES TESTE */
+section{
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.modal{
+	position: fixed;
+	padding: 0;
+	left: 0;
+	top: 160px;
+	width: 100%;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	transform: scale(1.1);
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+.modal-content {
+	background-color: rgba(204, 202, 199, 0.562);
+	padding: 3px 10px;
+	width: 900px;
+	height: 680px;
+	border-radius: 5px;
+	display: inline;
+	border-style: solid;
+}
+.show-modal{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+}
+form{
+	display: inline-block;
+	color: #DAA520;
+}
+#novomdfe input {
+	display: inline;
+	
+
+}
+.novomdfe {
+	color: #DAA520;
+}
+form{
+	align-items: block;
+	
+}
+button{
+	padding: 8px 15px;
+	background: #333333;
+	color: #ffffff;
+	border: 1px  solid #000000;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 5px;
+}
+button:hover{
+	background: #ff6600;
+}
+

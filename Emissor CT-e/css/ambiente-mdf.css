@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    margin: 0px;
+}
+
+.menu1 {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    
+    
+}
+
+.menu2 {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    margin: 3px 5px;
+        
+}
+
+button{
+	padding: 6px 15px;
+	background: #363636;
+	color: #ffffff;
+	border: 1px  solid #000000;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 5px;
+}
+button:hover{
+	background: #ff6600;
+}
+
+.pontos {
+    padding: 0px 15px;
+    font-size: 24px;
+    vertical-align: -3px;
+}
+
+.modal{
+	position: fixed;
+	padding: 0;
+	left: 0;
+	top: 160px;
+	width: 100%;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	transform: scale(1.1);
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out;	
+}
+
+.modal-content{
+	background-color: rgba(204, 202, 199, 0.562);
+	padding: 2px 5px;
+	width: 1200px;
+	height: 680px;
+	border-radius: 5px;
+	display: inline-block;
+	border-style: solid;
+
+}
+#linha1{
+	align-content: inline;
+}
+.modal-content button{
+	margin-left: 10px;
+}
+#ambiente-cte{
+	margin-left: 500px;
+}
+#novocte  input[type=text] {
+	display: inline;
+}
+
+.show-modal{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+    
+}
+
+.frete{
+	align-items: inline;
+}
+
+.numero{
+	align-items: block;
+}
+
+form{
+	display: inline-block;
+	color: black;
+}
+
+form{
+	align-items: flex;
+	
+}
+button{
+	padding: 8px 15px;
+	background: #333333;
+	color: white;
+	border: 1px  solid #000000;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 5px;
+}
+button:hover{
+	background: #ff6600;
+}
+
+label {
+	display: inline-block;
+	margin-left: 30px;
+	font-size: 16x;
+}
+
+div {
+	margin: 15px;
+	vertical-align: 10px;
+}
+
+nav li {
+	display: inline;
+}
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+p {
+	color: rgb(255, 255, 255);
+	padding: 3px 4px;
+	font-size: 20px;
+	background-color: #333333;
+	margin-right: 780px;
+	border-radius: 10px;
+}
+.menu {
+	margin-top: 0px;
+}
+
+h2 {
+	color: #333333;
+	margin-left: 15px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 28px;
+	
+}
+
+#responsavel {
+	display: inline;
+    margin: 10px 30px;
+}
+
+
+.menu {
+    margin: 15px 15px;
+}
+
+.menurodape {
+    margin-top: 65px;
+}
+
+select {
+	padding: 5px;
+}

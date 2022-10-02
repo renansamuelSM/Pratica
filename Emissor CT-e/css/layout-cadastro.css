@@ -1,0 +1,84 @@
+body{
+	font-family: Helvetica, sans-serif;
+	background-image: url(../images/site-branco.png);
+	background-size: cover;
+	background-position: center center;
+	height: 80vh;
+}
+h1{
+	color: #DAA520;
+	text-decoration: none;
+}
+
+label, input[type=submit], input[type=text]{
+	display: block;
+	
+}
+
+#wrap{
+	width: 350px;
+	background: #808080;
+	padding: 10px 20px;
+	margin-left: 820px;
+	margin-top: 80px;
+	border-radius: 5px;
+}
+label{
+	color: #DAA520;
+}
+header{
+	list-style: none;
+	padding-left: 0px;
+}
+header{
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+footer{
+	clear: both;
+}
+button{
+	padding: 8px 15px;
+	background: #333333;
+	color: #ffffff;
+	border: 1px  solid #000000;
+	cursor: pointer;
+	outline: 0;
+	border-radius: 5px;
+}
+button:hover{
+	background: #ff6600;
+}
+form{
+	display: inline-block;
+    vertical-align: top;
+    
+}
+#wrap2{
+	width: auto;
+	background: #808080;
+	padding: 10px;
+	margin-left: auto;
+	margin-top: 211px;
+	border-radius: 0px;
+}
+/*
+
+
+#wrap{
+	animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade{
+	form{
+	opacity: 0;
+	transform: scale(0,9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1.0);
+	}
+}
+*/

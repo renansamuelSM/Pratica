@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="uft-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="layoutlogin.css" />
+		<title> SM Sistemas - Login </title>
+
+
+    </head>
+
+    <body>
+        <main>
+			<div id="menu">
+				<div class="coluna col8">
+					<h1 class="logosistem">SM Sistemas</h1>
+				</div>
+				<form class="formlogin" action="login.php" method="post">
+					<div>
+						
+						<input id="login" name="loginuser" type="text" placeholder="Login" name="login" minlength="8" maxlength="20" required>
+					</div>
+					<br>
+					<div>
+						
+						<input id="senha" name="senhauser" type="password" placeholder="Senha" name="senha" minlength="8" maxlength="20" required>	
+					</div>
+                    <br>
+					<fieldset>
+							<legend>Salver login e senha?</legend>
+							<input type="radio" name="salvarloginpass" id="simsalvar" value="sim" checked required><label for="simsalvar">Sim</label>
+							<input type="radio" name="salvarloginpass" id="naosalvar" value="nao"><label for="naosalvar">Não</label>						
+					</fieldset>
+					<input type="submit" value="Login" id="logar">
+                    <br>
+                    <a href="cadastro.html">Cadastrar</a>
+					<br>
+					<br>
+				</form>	
+			</div>
+
+		<script src="script.js"></script>
+    </body>
+
+
+</html>

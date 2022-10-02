@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+		<meta charset="uft-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="cadastro.css">
+		<title> SM Sistemas - Cadastro</title>
+
+
+
+    </head>
+
+
+    <body>
+        <div id="formulariocadastro">
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <div id="cadatro">
+                        <h2>SM Sistemas</h2>
+                        <h3>Faça seu cadastro</h3>
+                        <form class="formcadastro" action="cadastro.php" method="post">
+                            
+                            <div class="inputBox">
+                                <label class="labelinput" for="nome">Nome Completo:</label>
+                                <input class="inputUser" type="text" name="nome" required>
+                            </div>
+                            <div class="inputUser">									
+                                <label class="labelinput" for="senha">Senha:</label>
+                                <input class="inputUser" type="password" name="senha" minlength="8" maxlength="20" required autocomplete="senha">	
+                            </div>
+                            
+                            <div class="inputBox">
+                                <label class="labelinput" for="confirmsenha">Confirmação de senha:</label>
+                                <input class="inputUser" type="password" name="confirmsenha" minlength="8" maxlength="20" required>
+                            </div>                           
+                            
+                            <div class="inputBox">
+                                <label class="labelinput" for="e-mail">E-mail:</label>
+                                <input class="inputUser" type="email" name="e-mail" required autocomplete="email">
+                            </div>
+                            
+                            <div class="inputBox">
+                                <label class="labelinput" for="confirme-mail">Confirme seu E-mail:</label>
+                                <input class="inputUser" type="email" name="confirme-mail" required autocomplete="email">
+                            </div>
+
+                            <input type="submit" value="Finalizar cadastro" class="finalizarcadastro">
+                        </form>	
+                        <br>						
+                            <a href="index.html">Voltar</a>
+                        		
+                        
+                    </div>
+                </div>
+            </div>
+        </div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

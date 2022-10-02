@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="uft-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css"	href="css/ambiente-cte.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title> SM Sistemas - Emissão CT-e</title>
+
+
+	</head>
+	<script>
+		function ShowModal(){
+			var element = document.getElementById("modal");
+			element.classList.add("show-modal");
+		}
+		function hideModal(){
+			var element = document.getElementById("modal");
+			element.classList.remove("show-modal");
+		}
+	</script>
+
+	<body>
+		<div id=wrap>
+			<header>
+				<div>
+					<form method="post" action="principal.html ">
+						<button id="principal" onclick="window.location.href='principal.html'">Principal</button>
+					</form>
+					<form method="post" action="cte.html ">
+						<button id="cte" onclick="window.location.href='cte.html'">CT-e</button>
+					</form>
+					<form method="post" action="inutilizacoes.html">
+						<button id="inutilizacoes" onclick="window.location.href='inutilizacao.html'">Inutilizações</button>
+					</form>
+					<form method="post" action="emitentes.html">
+						<button id="emitentes" onclick="window.location.href='emitentes.html'">Emitentes</button>
+					</form>
+					<form method="post" action="envolvidos.html">
+						<button id="envolvidos" onclick="window.location.href='envolvidos.html'">Envolvidos</button>
+					</form>
+					<form method="post" action="ambiente-mdfe.html">
+						<button id="embiente-mdfe" onclick="window.location.href='ambiente-mdfe.html'">MDF-e</button>
+					</form>
+					<form method="post" action="index.html">
+						<button id="paginlogin" onclick="window.location.href='index.html'">Sair</button>
+					</form>
+				</div>
+			</header>
+		</div>
+		<hr>
+	<section>
+		<div id=formulariocte>
+			<button onclick="ShowModal()">Novo CT-e</button>
+				<div class="modal" id="modal">
+					<div class="modal-content">
+						<div id="novocte">
+							<nav>
+								<div class="menu">
+									<ul>
+										<li><button><a href="">CTE</a></button></li>
+										<li><button><a href="">Geral</a></button></li>
+										<li><button><a href="">Carga</a></button></li>
+										<li><button><a href="">Valores e Impostos</a></button></li>
+										<li><button><a href="">Modal</a></button></li>
+										<li><button><a href="">Avançado</a></button></li>
+									</ul>
+								</div>
+								<h2>Geral</h2>
+								<p>Dados Gerais</p>
+								<hr>
+								<form action="" method="post">
+									<label for="numero">NÚMERO:</label>
+									<input class="numero" type="number" name="numero" />
+									<label for="serie">SÉRIE:</label>
+									<input class="serie" type="number" name="numero" />
+									<br>
+									<label for="serviço">TIPO DE SERVIÇO:</label>
+									<input class="tipo" type="text" name="tipo" />
+									<label for="serviço">MODAL</label>
+									<input class="tipo" type="text" name="tipo" />
+									<br>
+									<label for="finelidade">FINALIDADE DE EMISSÃO:</label>
+									<input class="numero" type="text" name="tipo" />
+									<label for="data">DATA E HORA DA EMISSÃO:</label>
+									<input class="datahora" type="datetime-local"/>
+									<br>
+									<div id="responsavel">
+										<label type="text">Responsavel pelo frete:</label>
+										<input type="radio" name="opcao" value="remetente" checker="checked" Remetente/> Remetente
+										<input type="radio" name="opcao" value="expedidor" /> Expedidor
+										<input type="radio" name="opcao" value="destinatario" /> Destinatario
+										<input type="radio" name="opcao" value="recabedor" /> Recebedor
+										<input type="radio" name="opcao" value="outros" />Outros
+									</div>
+									<br/><br/>
+								
+									<div id="empresas">
+										<label for="remetente">REMETENTE</label>
+										<input class="remetente" type="text" name="remetente" />
+										<button>NOVO</button>
+										<label for="">DESTINATÁRIO</label>
+										<input class="destinatario" type="text" name="destinatario" />
+										<button>NOVO</button>
+										<br>
+										<label for="remetente">EXPEDIDOR</label>
+										<input class="remetente" type="text" name="remetente" />
+										<button>NOVO</button>
+										<label for="remetente">RECEBEDOR</label>
+										<input class="remetente" type="text" name="remetente" />
+										<button>NOVO</button>
+										<br>
+										<label for="tomador">TOMADOR:</label>
+										<input class="tomador" type="text" name="tomador" />
+										<button>NOVO</button>
+									</div>
+									<br /><br /><br />
+								</form><br />
+								<hr>
+								<br /><br /><br /><br /><br /><br />
+								<div class="menurodape">
+									<form method="post" action="ambiente-cte.html">
+										<button id="ambiente-cte">Fechar</button>
+									</form>
+									<form method="post" action="ambiente-cte.html">
+										<button id="ambiente-voltar">Voltar</button>
+									</form>
+									<form method="post" action="ambiente-cte.html">
+										<button id="ambiente-avancar">Avançar</button>
+									</form>
+									<form method="post" action="ambiente-cte.html">
+										<button id="ambiente-concluir">Concluir</button>
+									</form>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+			<form method="post" action="emitir-cte.html ">
+				<button class="emitir" href="emitir-cte.html">Emitir</button>
+			</form>
+			<form method="post" action="cancelar-cte.html ">
+				<button class="cancelar" href="cancelar-cte.html">Cancelar</button>
+			</form>
+			<form method="post" action="consultar.html ">
+				<button class="cansultar" href="consultar.html">Consultar</button>
+			</form>
+			<form method="post" action="imprimir.html ">
+				<button class="Imprimir" href="imprimir.html">Imprimir</button>
+			</form>
+			<form method="post" action="opcao.html ">
+				<button class="opcao" href="opcao.html">Opção</button>
+			</form>
+		</div>
+	</section>	
+	</body>
+</html>

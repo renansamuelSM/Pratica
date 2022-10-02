@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/ambiente-mdf.css">
+    <title>SM Sistemas - CT-e</title>
+</head>
+<script>
+    function ShowModal(){
+        var element = document.getElementById("modal");
+        element.classList.add("show-modal");
+    }
+    function hideModal(){
+        var element = document.getElementById("modal");
+        element.classList.remove("show-modal");
+    }
+</script>
+<body>
+    <header>
+        <nav class="menu1">
+            <button>Principal</button>
+            <button>MDF-e</button>
+            <button>Inutilizações</button>
+            <button>Emitentes</button>
+            <button>Envolvidos</button>
+            <button> <a href="ambiente-cte.html">CT-e</a></button>
+            <button> <a href="index.html"> Sair</a></button>
+        </nav>
+        <hr>
+        <nav class="menu2">
+            <button onclick="ShowModal()">Novo</button>
+				<div class="modal" id="modal">
+					<div class="modal-content">
+						<div id="novocte">
+							<nav>
+								<div class="menu">
+									
+									<button>CTE</button>
+									<button>Geral</button>
+									<button>Carga</button>
+									<button>Valores e Impostos</button>
+									<button>Modal</button>
+									<button>Avançado</button>
+									
+								</div>
+								<h2>Geral</h2>
+								<p>Dados Gerais</p>
+								<hr>
+								<form action="" method="post">
+									<div>
+										<label for="numero">NÚMERO:</label>
+										<input class="numero" type="number" name="numero" value="1" />
+										<input type="checkbox">Automático
+										<label for="serie">SÉRIE:</label>
+										<input class="serie" type="number" name="numero" value="1" />
+									</div>
+									<div>
+										<label for="serviço">TIPO DE SERVIÇO:</label>
+										<select name="select">
+											<option value="valor1" selected>NORMAL</option>
+											<option value="valor2">SUBCONTRATAÇÃO</option>
+											<option value="valor3">REDESPACHO</option>
+											<option value="valor4">REDESPACHO INTERMEDIÁRIO</option>
+											<option value="valor5">VINCULADO A MULTIMODAL</option>
+										</select>
+										
+										<label for="serviço">MODAL:</label>
+										<select name="select">
+										<option value="valor1" selected>RODOVIÂRIO</option>
+										<option value="valor2">AÉRIO</option>
+										<option value="valor3">AQUAVIÁRIO</option>
+										<option value="valor4">FERROVIÁRIO</option>
+										<option value="valor5">DUTOVIÁRIO</option>
+										<option value="valor6">MULTIMODAL</option>
+										</select>
+									</div>
+                                    
+                                    
+                                    <div>
+									<label for="finelidade">FINALIDADE DE EMISSÃO:</label>
+									<select name="select">
+										<option value="valor1" selected>NORMAL</option>
+										<option value="valor2">COMPLEMENTAR</option>
+										<option value="valor3">ANULAÇÃO</option>
+										<option value="valor4">SUBSTITUIÇÃO</option>
+										
+									</select>
+									<label for="data">DATA E HORA DA EMISSÃO:</label>
+									<input class="datahora" type="datetime-local"/>
+									</div>
+									<div id="responsavel">
+										<label for="identificador">INDENTIFICADOR GLOGALIZADO:</label>
+										<input type="checkbox">
+										<label type="text">RESPONSAVEL PELO FRETE:</label>
+										<input type="radio" name="opcao" value="remetente" checker="checked" Remetente/> Remetente
+										<input type="radio" name="opcao" value="expedidor" /> Expedidor
+										<input type="radio" name="opcao" value="destinatario" /> Destinatario
+										<input type="radio" name="opcao" value="recabedor" /> Recebedor
+										<input type="radio" name="opcao" value="outros" />Outros
+									</div>
+								
+									<div id="empresas">
+										<div>
+											<label for="remetente">REMETENTE:</label>
+											<input class="remetente" type="text" name="remetente" />
+											<button>NOVO</button>
+											<label for="destinatario">DESTINATÁRIO:</label>
+											<input class="destinatario" type="text" name="destinatario" />
+											<button>NOVO</button>
+										</div>
+										<div>	
+											<label for="remetente">EXPEDIDOR:</label>
+											<input class="remetente" type="text" name="remetente" />
+											<button>NOVO</button>
+										
+											<label for="remetente">RECEBEDOR:</label>
+											<input class="remetente" type="text" name="remetente" />
+											<button>NOVO</button>
+										</div>
+										<div>
+											<label for="local">LOCAL DE INÍCIO DA PRESTAÇÃO:</label>
+											<select name="select">
+												<option value="valor1" selected>RS</option>
+												<option value="valor2">SC</option>
+												<option value="valor3">PR</option>
+												<option value="valor4">SP</option>
+											</select>
+											<input type="text">
+
+											<label for="local">LOCAL DE TÉRMINO DA PRESTAÇÃO:</label>
+											<select name="select">
+												<option value="valor1" selected>RS</option>
+												<option value="valor2">SC</option>
+												<option value="valor3">PR</option>
+												<option value="valor4">SP</option>
+											</select>
+											<input type="text">
+										</div>
+										<div>
+											<label for="tomador">TOMADOR:</label>
+											<input class="tomador" type="text" name="tomador" />
+											<button>NOVO</button>
+											<label for="indicadortomador">INDICADOR DA IE DO TOMADOR:</label>
+											<select name="select">
+												<option value="valor1" selected>CONTRIBUINTE ICMS</option>
+												<option value="valor2">CONTRIBUINTE ISENTO</option>
+												<option value="valor3">NÃO CONTRIBUINTE</option>
+												
+											</select>
+										</div>
+									</div>
+									
+								</form>
+								<hr>
+								
+								<div class="menurodape">
+									
+									<button id="ambiente-cte"><a href="ambiente-cte.html">Fechar</a></button>
+									<button id="ambiente-voltar">Voltar</button>
+									<button id="ambiente-avancar">Avançar</button>
+									<button id="ambiente-concluir" type="submit">Concluir</button>
+									
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+            <button>Emitir</button>
+            <button>Cancelar</button>
+            <button>Consultar</button>
+            <button>Imprimir DACTE(s)</button>
+            <button class="pontos"> . . . </button>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>
